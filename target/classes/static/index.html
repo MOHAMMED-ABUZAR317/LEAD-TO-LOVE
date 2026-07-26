@@ -1,19 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEAD TO LOVE</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead to Love — Every Path Can Lead to Love</title>
+<meta name="description" content="Lead to Love connects everyday kindness to real need — food, education, shelter and healthcare for families who need it most.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div id="main">
-        <div id="home">
-            <div id="nav">
-                
-            </div>
+
+<!-- scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 29C17 29 4 21.5 4 12.8C4 8.2 7.6 5 11.6 5C14.2 5 16.2 6.3 17 8.4C17.8 6.3 19.8 5 22.4 5C26.4 5 30 8.2 30 12.8C30 21.5 17 29 17 29Z" fill="url(#lg)"/>
+        <defs>
+          <linearGradient id="lg" x1="4" y1="5" x2="30" y2="29" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F2A93B"/>
+            <stop offset="1" stop-color="#E8546B"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <span>Lead <em>to</em> Love</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#causes" class="nav-link">Causes</a>
+      <a href="#path" class="nav-link">How It Works</a>
+      <a href="#give" class="nav-link">Give</a>
+      <a href="#stories" class="nav-link">Stories</a>
+      <a href="#join" class="nav-link">Volunteer</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#give" class="btn btn-donate">Donate now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#causes">Causes</a>
+    <a href="#path">How It Works</a>
+    <a href="#give">Give</a>
+    <a href="#stories">Stories</a>
+    <a href="#join">Volunteer</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A path from kindness to need</p>
+        <h1>Every path<br> can <em>lead</em> to <span class="love-word">love.</span></h1>
+        <p class="hero-sub">Lead to Love turns everyday generosity into meals, classrooms, shelter and
+          medicine — delivered straight to families who need it most. No middle steps. No noise. Just a
+          path, well walked.</p>
+        <div class="hero-cta">
+          <a href="#give" class="btn btn-primary">Start a donation</a>
+          <a href="#path" class="btn btn-ghost">See how it works ↓</a>
         </div>
-     </div>
+        <div class="trust-row">
+          <div class="trust-item"><strong>94%</strong><span>of every ₹100 reaches the field</span></div>
+          <div class="trust-item"><strong>12,400+</strong><span>families walked with since 2019</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <svg viewBox="0 0 420 460" class="ripple-art">
+          <circle class="ripple-ring" cx="210" cy="230" r="40"/>
+          <circle class="ripple-ring" cx="210" cy="230" r="90"/>
+          <circle class="ripple-ring" cx="210" cy="230" r="140"/>
+          <circle class="ripple-ring" cx="210" cy="230" r="190"/>
+          <path id="heroPath" d="M60 380 C 120 320, 90 220, 160 190 C 230 160, 240 100, 300 60"
+                fill="none" stroke="url(#pathGrad)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="60" cy="380" r="9" fill="#E8546B"/>
+          <circle cx="300" cy="60" r="9" fill="#F2A93B"/>
+          <g class="pulse-heart" transform="translate(210,230)">
+            <path d="M0 16C0 16-18 5-18-8c0-8 6.5-13 13-13 3.4 0 6.9 1.6 5 5.1C1.9-9.5 5.4-11 8.8-11c6.5 0 13 5 13 13 0 13-21.8 24-21.8 24z" fill="#E8546B"/>
+          </g>
+          <defs>
+            <linearGradient id="pathGrad" x1="60" y1="380" x2="300" y2="60" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#E8546B"/>
+              <stop offset="1" stop-color="#F2A93B"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ IMPACT COUNTERS ============ -->
+  <section class="impact-bar">
+    <div class="wrap impact-grid">
+      <div class="impact-item reveal">
+        <span class="impact-num" data-target="184320" data-suffix="+">0</span>
+        <p>Meals delivered</p>
+      </div>
+      <div class="impact-item reveal">
+        <span class="impact-num" data-target="3120" data-suffix="+">0</span>
+        <p>Children in school</p>
+      </div>
+      <div class="impact-item reveal">
+        <span class="impact-num" data-target="860" data-suffix="+">0</span>
+        <p>Families rehoused</p>
+      </div>
+      <div class="impact-item reveal">
+        <span class="impact-num" data-target="41" data-suffix=" cities">0</span>
+        <p>Where we walk</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAUSES ============ -->
+  <section class="causes" id="causes">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Where your path can lead</p>
+        <h2>Choose a cause to walk toward</h2>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-chip active" data-filter="all">All causes</button>
+        <button class="filter-chip" data-filter="food">Food</button>
+        <button class="filter-chip" data-filter="education">Education</button>
+        <button class="filter-chip" data-filter="shelter">Shelter</button>
+        <button class="filter-chip" data-filter="health">Healthcare</button>
+      </div>
+
+      <div class="cause-grid" id="causeGrid">
+        <article class="cause-card reveal" data-cat="food">
+          <div class="cause-media food">🍲</div>
+          <div class="cause-body">
+            <span class="tag tag-food">Food</span>
+            <h3>Daily Meal Line</h3>
+            <p>Warm, nourishing meals reach doorsteps and shelters across 41 cities, every single day.</p>
+            <div class="cause-bar"><span style="width:72%"></span></div>
+            <div class="cause-meta"><span>₹18.4L raised</span><span>72% funded</span></div>
+          </div>
+        </article>
+
+        <article class="cause-card reveal" data-cat="education">
+          <div class="cause-media education">📚</div>
+          <div class="cause-body">
+            <span class="tag tag-education">Education</span>
+            <h3>First Bell Fund</h3>
+            <p>Books, uniforms and tuition support so no child skips school for lack of ₹500.</p>
+            <div class="cause-bar"><span style="width:54%"></span></div>
+            <div class="cause-meta"><span>₹9.1L raised</span><span>54% funded</span></div>
+          </div>
+        </article>
+
+        <article class="cause-card reveal" data-cat="shelter">
+          <div class="cause-media shelter">🏠</div>
+          <div class="cause-body">
+            <span class="tag tag-shelter">Shelter</span>
+            <h3>Roofs Before Winter</h3>
+            <p>Emergency repairs and temporary housing before the cold sets in for families outdoors.</p>
+            <div class="cause-bar"><span style="width:38%"></span></div>
+            <div class="cause-meta"><span>₹6.7L raised</span><span>38% funded</span></div>
+          </div>
+        </article>
+
+        <article class="cause-card reveal" data-cat="health">
+          <div class="cause-media health">🩺</div>
+          <div class="cause-body">
+            <span class="tag tag-health">Healthcare</span>
+            <h3>Mobile Clinic Days</h3>
+            <p>Free checkups, medicine and maternal care brought directly to underserved neighbourhoods.</p>
+            <div class="cause-bar"><span style="width:61%"></span></div>
+            <div class="cause-meta"><span>₹11.2L raised</span><span>61% funded</span></div>
+          </div>
+        </article>
+
+        <article class="cause-card reveal" data-cat="food">
+          <div class="cause-media food alt">🌾</div>
+          <div class="cause-body">
+            <span class="tag tag-food">Food</span>
+            <h3>Grain Bank Drive</h3>
+            <p>Monthly ration kits so families can cook at home with dignity, not just survive.</p>
+            <div class="cause-bar"><span style="width:47%"></span></div>
+            <div class="cause-meta"><span>₹7.8L raised</span><span>47% funded</span></div>
+          </div>
+        </article>
+
+        <article class="cause-card reveal" data-cat="education">
+          <div class="cause-media education alt">🎓</div>
+          <div class="cause-body">
+            <span class="tag tag-education">Education</span>
+            <h3>Girls Who Stay</h3>
+            <p>Scholarships built specifically to keep girls enrolled through secondary school.</p>
+            <div class="cause-bar"><span style="width:29%"></span></div>
+            <div class="cause-meta"><span>₹3.4L raised</span><span>29% funded</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS / THE PATH ============ -->
+  <section class="path-section" id="path">
+    <div class="wrap">
+      <div class="section-head reveal light">
+        <p class="eyebrow">The path, walked in four steps</p>
+        <h2>How your kindness finds its way</h2>
+      </div>
+
+      <div class="path-track">
+        <svg class="path-line" viewBox="0 0 100 800" preserveAspectRatio="none" aria-hidden="true">
+          <path id="drawPath" d="M50 20 C 20 120, 80 200, 50 300 C 20 400, 80 480, 50 580 C 20 680, 80 720, 50 780"
+                fill="none" stroke="url(#trackGrad)" stroke-width="2.4"/>
+          <defs>
+            <linearGradient id="trackGrad" x1="0" y1="0" x2="0" y2="800" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F2A93B"/>
+              <stop offset="1" stop-color="#E8546B"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <div class="path-step reveal">
+          <span class="path-dot">1</span>
+          <h3>You choose a cause</h3>
+          <p>Pick where your heart pulls you — food, school, a roof, or a doctor's visit.</p>
+        </div>
+        <div class="path-step reveal right">
+          <span class="path-dot">2</span>
+          <h3>We route it locally</h3>
+          <p>Field partners in 41 cities receive funds within 48 hours, not months.</p>
+        </div>
+        <div class="path-step reveal">
+          <span class="path-dot">3</span>
+          <h3>Impact is verified</h3>
+          <p>Photos, receipts and GPS-tagged delivery logs are attached to your gift.</p>
+        </div>
+        <div class="path-step reveal right">
+          <span class="path-dot">4</span>
+          <h3>You see it land</h3>
+          <p>An update reaches your inbox the moment your path completes its journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DONATION CALCULATOR ============ -->
+  <section class="give-section" id="give">
+    <div class="wrap give-grid">
+      <div class="give-copy reveal">
+        <p class="eyebrow">Give with clarity</p>
+        <h2>See exactly what your gift becomes</h2>
+        <p class="hero-sub">Slide, tap, or type an amount — watch it turn into meals, school days or
+          medicine in real time. Every rupee is tracked back to a real family.</p>
+        <ul class="give-facts">
+          <li>Cancel or change a monthly gift anytime, no questions asked.</li>
+          <li>Tax receipts issued instantly to your email.</li>
+          <li>100% secure — this demo does not process real payments.</li>
+        </ul>
+      </div>
+
+      <div class="give-card reveal">
+        <div class="give-toggle" role="tablist">
+          <button class="toggle-btn active" data-freq="once">One-time</button>
+          <button class="toggle-btn" data-freq="monthly">Monthly</button>
+        </div>
+
+        <div class="amount-chips">
+          <button class="chip" data-amount="500">₹500</button>
+          <button class="chip active" data-amount="1500">₹1,500</button>
+          <button class="chip" data-amount="3000">₹3,000</button>
+          <button class="chip" data-amount="5000">₹5,000</button>
+        </div>
+
+        <input type="range" min="100" max="10000" step="50" value="1500" class="amount-slider" id="amountSlider">
+
+        <div class="amount-display">
+          <span>₹</span><input type="number" id="amountInput" value="1500" min="100" max="100000">
+        </div>
+
+        <div class="impact-readout" id="impactReadout">
+          <span class="impact-emoji">🍲</span>
+          <p><strong id="impactCount">15</strong> <span id="impactLabel">warm meals</span> for a family this week</p>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="donateBtn">
+          <span class="btn-label">Confirm ₹1,500 gift</span>
+        </button>
+        <p class="give-note">A demo confirmation only — no card details requested, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="stories" id="stories">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Voices from the path</p>
+        <h2>Stories, not statistics</h2>
+      </div>
+
+      <div class="carousel reveal">
+        <div class="carousel-track" id="carouselTrack">
+          <figure class="story-card">
+            <p>“The grain kit arrived the same week my husband lost work. For the first time in months, I
+              wasn't doing the math on whether we'd eat.”</p>
+            <figcaption>— Radha, mother of three, Hyderabad</figcaption>
+          </figure>
+          <figure class="story-card">
+            <p>“My daughter's school fees were three months overdue. First Bell Fund cleared it before the
+              term exams. She sat every paper.”</p>
+            <figcaption>— Suresh, farmer, Nagpur</figcaption>
+          </figure>
+          <figure class="story-card">
+            <p>“The mobile clinic found my mother's condition early. A five-minute checkup on a Tuesday
+              changed everything that came after.”</p>
+            <figcaption>— Meera, caregiver, Lucknow</figcaption>
+          </figure>
+          <figure class="story-card">
+            <p>“We slept under a tarp for four months. Roofs Before Winter gave us four walls before the
+              first frost. I still don't have the words.”</p>
+            <figcaption>— Ismail, day labourer, Ranchi</figcaption>
+          </figure>
+        </div>
+        <div class="carousel-controls">
+          <button id="prevStory" aria-label="Previous story">←</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button id="nextStory" aria-label="Next story">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOLUNTEER / JOIN ============ -->
+  <section class="join-section" id="join">
+    <div class="wrap join-grid">
+      <div class="join-copy reveal">
+        <p class="eyebrow">Beyond donating</p>
+        <h2>Walk the path with us in person</h2>
+        <p class="hero-sub">Pack ration kits, tutor a child, or lend a professional skill. Tell us how much
+          time you have — we'll match you to a role near you.</p>
+        <div class="join-roles">
+          <span class="role-pill">🍱 Kitchen crew</span>
+          <span class="role-pill">📖 Weekend tutor</span>
+          <span class="role-pill">🚚 Delivery driver</span>
+          <span class="role-pill">💻 Remote skills</span>
+        </div>
+      </div>
+
+      <form class="join-form reveal" id="joinForm" novalidate>
+        <div class="field">
+          <label for="fname">Full name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your name" required>
+          <span class="field-error">Please tell us your name.</span>
+        </div>
+        <div class="field">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" name="femail" placeholder="you@example.com" required>
+          <span class="field-error">Enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="fhours">Hours per month</label>
+          <select id="fhours" name="fhours">
+            <option>1–3 hours</option>
+            <option>4–8 hours</option>
+            <option>9+ hours</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Join the path</button>
+        <p class="form-success" id="joinSuccess">You're in! Check your inbox for next steps. 💛</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="wrap newsletter-inner reveal">
+      <div>
+        <h2>One honest email a month.</h2>
+        <p>Real updates from the field — no spam, unsubscribe in one click.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form" novalidate>
+        <input type="email" id="newsEmail" placeholder="you@example.com" required>
+        <button type="submit" class="btn btn-primary">Keep me posted</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo light">
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 29C17 29 4 21.5 4 12.8C4 8.2 7.6 5 11.6 5C14.2 5 16.2 6.3 17 8.4C17.8 6.3 19.8 5 22.4 5C26.4 5 30 8.2 30 12.8C30 21.5 17 29 17 29Z" fill="url(#lg2)"/>
+          <defs>
+            <linearGradient id="lg2" x1="4" y1="5" x2="30" y2="29" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F2A93B"/><stop offset="1" stop-color="#E8546B"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Lead <em>to</em> Love</span>
+      </a>
+      <p>A small path, walked consistently, still arrives.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#causes">Causes</a>
+      <a href="#path">How it works</a>
+      <a href="#stories">Stories</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get involved</h4>
+      <a href="#give">Donate</a>
+      <a href="#join">Volunteer</a>
+    </div>
+    <div class="footer-col">
+      <h4>Trust</h4>
+      <a href="#">Annual report</a>
+      <a href="#">Financial transparency</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 Lead to Love. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<!-- ============ TOAST / CONFIRMATION ============ -->
+<div class="toast" id="donateToast">
+  <span class="toast-heart">💛</span>
+  <div>
+    <strong id="toastTitle">Thank you!</strong>
+    <p id="toastBody">Your gift is on its way to a family.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
